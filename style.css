@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Manrope',sans-serif;
+    background:#faf8f5;
+    color:#222;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-family:'Cormorant Garamond',serif;
+    font-size:2rem;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#222;
+}
+
+#menuBtn{
+    display:none;
+    border:none;
+    background:none;
+    font-size:24px;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:50px;
+}
+
+.subtitle{
+    color:#c98c8c;
+    letter-spacing:3px;
+    text-transform:uppercase;
+}
+
+.hero h1{
+    font-family:'Cormorant Garamond',serif;
+    font-size:5rem;
+    margin:20px 0;
+}
+
+.hero-text{
+    max-width:600px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 30px;
+    text-decoration:none;
+    border:1px solid black;
+    color:black;
+    border-radius:50px;
+    transition:0.3s;
+    background:white;
+}
+
+.btn:hover{
+    background:black;
+    color:white;
+}
+
+.section{
+    padding:80px 10%;
+}
+
+.section h2{
+    font-family:'Cormorant Garamond',serif;
+    font-size:3rem;
+    margin-bottom:30px;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.project-card{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:white;
+}
+
+@media(max-width:768px){
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        top:70px;
+        right:20px;
+        background:white;
+        padding:20px;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    #menuBtn{
+        display:block;
+    }
+
+    .hero h1{
+        font-size:3.5rem;
+    }
+}

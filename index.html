@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Maham Kanwal Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2 class="logo">Maham</h2>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <button id="menuBtn">☰</button>
+    </nav>
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <p class="subtitle">Cybersecurity Student</p>
+
+        <h1>
+            Maham <br>
+            Kanwal
+        </h1>
+
+        <p class="hero-text">
+            Passionate about cybersecurity, web development,
+            and creating modern digital experiences.
+        </p>
+
+        <a href="#contact" class="btn">
+            Contact Me
+        </a>
+    </div>
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+
+    <p>
+        I am Maham Kanwal, a Cybersecurity student.
+        I enjoy learning web development, networking,
+        and information security.
+        My goal is to build secure and user-friendly digital solutions.
+    </p>
+</section>
+
+<section id="skills" class="section">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+        <div class="card">HTML5</div>
+        <div class="card">CSS3</div>
+        <div class="card">JavaScript</div>
+        <div class="card">GitHub</div>
+        <div class="card">Canva</div>
+        <div class="card">Figma</div>
+        <div class="card">Cybersecurity</div>
+        <div class="card">Networking</div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>Calculator App</h3>
+            <p>Simple calculator using HTML, CSS and JavaScript.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>To Do App</h3>
+            <p>Task management application with interactive features.</p>
+        </div>
+
+        <div class="project-card">
+            <h3>Nothing Style Store</h3>
+            <p>Modern mobile store inspired by Nothing design.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Your Name"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Your Email"
+            required
+        >
+
+        <textarea
+            id="message"
+            placeholder="Your Message"
+            rows="5"
+            required
+        ></textarea>
+
+        <button type="submit" class="btn">
+            Send Message
+        </button>
+
+    </form>
+
+    <p id="formMessage"></p>
+</section>
+
+<footer>
+    <p>© 2026 Maham Kanwal | Portfolio Website</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
